@@ -3,28 +3,28 @@
 
 #### 1.1
 **有线性方程组  
-$\left\{\begin{array}{}
+$`\left\{\begin{array}{}
     0.835x &+ 0.667y &= 0.168 \\
     0.333x &+ 0.266y &= 0.067 
-\end{array}\right.$，  
-记矩阵$\boldsymbol{A}$和$\left(\boldsymbol{A}|\boldsymbol{b}\right)$为此线性方程组的系数矩阵和增广矩阵。分别使用5个和6个有效数字计算矩阵$\boldsymbol{A}$和$\left(\boldsymbol{A}|\boldsymbol{b}\right)$的秩，并判断方程组是否可解。**
+\end{array}\right.`$，  
+记矩阵$`\boldsymbol{A}$和$\left(\boldsymbol{A}|\boldsymbol{b}\right)`$为此线性方程组的系数矩阵和增广矩阵。分别使用5个和6个有效数字计算矩阵$`\boldsymbol{A}$和$\left(\boldsymbol{A}|\boldsymbol{b}\right)`$的秩，并判断方程组是否可解。**
 
 ##### ①在6位有效数字下：
-显然$\boldsymbol{A}$和$\left(\boldsymbol{A}|\boldsymbol{b}\right)$的所有$1$阶子式全非零，  
-$\det\boldsymbol{A} = \det\left[\boldsymbol{A} | \boldsymbol{b}\right]_3 = 0.835\times 0.266 - 0.333\times 0.667 = 0.222110 - 0.222111 = -0.000001 \neq 0$，  
-所以$\mathrm{rank}\left(\boldsymbol{A}\right) = 2, \mathrm{rank}\left(\boldsymbol{A}|\boldsymbol{b}\right) = 2$。 
-$\boldsymbol{A}$满秩，方程组可解且有唯一解。
+显然$`\boldsymbol{A}$和$\left(\boldsymbol{A}|\boldsymbol{b}\right)`$的所有$1$阶子式全非零，  
+$`\det\boldsymbol{A} = \det\left[\boldsymbol{A} | \boldsymbol{b}\right]_3 = 0.835\times 0.266 - 0.333\times 0.667 = 0.222110 - 0.222111 = -0.000001 \neq 0`$，  
+所以$`\mathrm{rank}\left(\boldsymbol{A}\right) = 2, \mathrm{rank}\left(\boldsymbol{A}|\boldsymbol{b}\right) = 2`$。 
+$`\boldsymbol{A}`$满秩，方程组可解且有唯一解。
 
 ##### ②在5位有效数字下：
-显然$\boldsymbol{A}$和$\left(\boldsymbol{A}|\boldsymbol{b}\right)$的所有$1$阶子式全非零，  
-$\begin{array}{rl}
+显然$`\boldsymbol{A}$和$\left(\boldsymbol{A}|\boldsymbol{b}\right)`$的所有$`1`$阶子式全非零，  
+$`\begin{array}{rl}
     \det\boldsymbol{A} = \det\left[\boldsymbol{A} | \boldsymbol{b}\right]_3 &= 0.835\times 0.266 - 0.333\times 0.667 = 0.22211 - 0.22211 = 0, \\
     \det\left[\boldsymbol{A} | \boldsymbol{b}\right]_2 &= 0.835\times 0.067 - 0.333\times 0.168 = 0.05594 - 0.05594 = 0, \\
     \det\left[\boldsymbol{A} | \boldsymbol{b}\right]_1 &= 0.667\times 0.067 - 0.266\times 0.168 = 0.04469 - 0.04469 = 0,
-\end{array}$  
-所以$\mathrm{rank}\left(\boldsymbol{A}\right) = 1, \mathrm{rank}\left(\boldsymbol{A}|\boldsymbol{b}\right) = 1$，$\boldsymbol{A}$不满秩，方程组无解或有无穷解。  
-对$\boldsymbol{A}$进行Gauss消元，有  
-$\begin{aligned}
+\end{array}`$  
+所以$`\mathrm{rank}\left(\boldsymbol{A}\right) = 1, \mathrm{rank}\left(\boldsymbol{A}|\boldsymbol{b}\right) = 1`$，$`\boldsymbol{A}`$不满秩，方程组无解或有无穷解。  
+对$`\boldsymbol{A}`$进行Gauss消元，有  
+$`\begin{aligned}
     \boldsymbol{T}_{1,2}\left(-\frac{0.333}{0.835}\right)\left(\boldsymbol{A}|\boldsymbol{b}\right)
     &= \boldsymbol{T}_{1,2}\left(-0.39880\right)\left(\boldsymbol{A}|\boldsymbol{b}\right) \\
     &= \begin{pmatrix}
@@ -35,15 +35,15 @@ $\begin{aligned}
         0.835 & 0.667 & 0.168 \\
         0 & 0 & 0.000002
     \end{pmatrix}
-\end{aligned}$
+\end{aligned}`$
 所以方程组无解。
 
 
 
 #### 1.2
-**$\boldsymbol{A}$为$n\times n$矩阵，分别计算$\boldsymbol{A}\boldsymbol{e}_j, \boldsymbol{e}_i^\mathrm{T}\boldsymbol{A}\boldsymbol{e}_j$，这里$\boldsymbol{e}_i$和$\boldsymbol{e}_j$分别是单位矩阵$\boldsymbol{I}$的第$i$列和第$j$列。**
+**$`\boldsymbol{A}`$为$`n\times n`$矩阵，分别计算$`\boldsymbol{A}\boldsymbol{e}_j, \boldsymbol{e}_i^\mathrm{T}\boldsymbol{A}\boldsymbol{e}_j`$，这里$`\boldsymbol{e}_i`$和$`\boldsymbol{e}_j`$分别是单位矩阵$`\boldsymbol{I}`$的第$`i`$列和第$`j`$列。**
 
-$\begin{aligned}
+$`\begin{aligned}
     \boldsymbol{A}\boldsymbol{e}_j
     &= \begin{pmatrix}
         \boldsymbol{a}_1 & \boldsymbol{a}_2 & \cdots & \boldsymbol{a}_j & \cdots & \boldsymbol{a}_n
@@ -52,10 +52,10 @@ $\begin{aligned}
     \end{pmatrix} \\
     &= 0\boldsymbol{a}_1 + 0\boldsymbol{a}_2 + \cdots + \boldsymbol{a}_j + \cdots + 0\boldsymbol{a}_n \\
     &= \boldsymbol{a}_j
-\end{aligned}$，  
-即$\boldsymbol{A}$的第$j$列。  
+\end{aligned}`$，  
+即$`\boldsymbol{A}`$的第$`j`$列。  
 
-$\begin{aligned}
+$`\begin{aligned}
     \boldsymbol{e}_i^\mathrm{T}\boldsymbol{A}\boldsymbol{e}_j 
     &= \boldsymbol{e}_i^\mathrm{T}\boldsymbol{a}_j \\
     &= \begin{pmatrix}
@@ -65,37 +65,37 @@ $\begin{aligned}
     \end{pmatrix} \\
     &= 0a_{1,j} + 0a_{2,j} + \cdots + a_{i,j} + \cdots + 0a_{n,j} \\
     &= a_{i,j}
-\end{aligned}$，  
-即$\boldsymbol{A}$第$i$行第$j$列的元素。  
+\end{aligned}`$，  
+即$`\boldsymbol{A}`$第$`i`$行第$`j`$列的元素。  
 
 
 
 #### 1.3
 **证明：两个上（下）三角矩阵相乘仍为上（下）三角矩阵。**
 
-由于在任意上三角矩阵$\boldsymbol{U} = \left(u_{i,j}\right)$中$u_{i,j} = 0, \forall i>j$，所以$u_{i,j} = u_{i,j}\boldsymbol{1}_{\left[i\le j\right]}$，$\boldsymbol{U}=\left(u_{i,j}\boldsymbol{1}_{\left[i\le j\right]}\right)$。  
-任意两个上三角矩阵$\boldsymbol{U} = \left(u_{i,k}\right) \in \mathbb{F}^{m\times n}, \boldsymbol{V} = \left(v_{k,j}\right) \in \mathbb{F}^{n\times p}$，记$\boldsymbol{A} = \left(a_{i,j}\right) = \boldsymbol{U}\boldsymbol{V} \in \mathbb{F}^{m\times p}$，有  
-$\begin{aligned}
+由于在任意上三角矩阵$`\boldsymbol{U} = \left(u_{i,j}\right)`$中$`u_{i,j} = 0, \forall i>j`$，所以$`u_{i,j} = u_{i,j}\boldsymbol{1}_{\left[i\le j\right]}`$，$`\boldsymbol{U}=\left(u_{i,j}\boldsymbol{1}_{\left[i\le j\right]}\right)`$。  
+任意两个上三角矩阵$`\boldsymbol{U} = \left(u_{i,k}\right) \in \mathbb{F}^{m\times n}, \boldsymbol{V} = \left(v_{k,j}\right) \in \mathbb{F}^{n\times p}`$，记$`\boldsymbol{A} = \left(a_{i,j}\right) = \boldsymbol{U}\boldsymbol{V} \in \mathbb{F}^{m\times p}`$，有  
+$`\begin{aligned}
     \left|a_{i,j}\right|
     &= \left|\sum_{k=1}^n{u_{i,k}v_{k,j}}\right| \\
     &\le \sum_{k=1}^n{\left|u_{i,k}v_{k,j}\right|} \\
     &= \sum_{k=1}^n{\left|u_{i,k}\boldsymbol{1}_{\left[i\le k\right]}v_{k,j}\boldsymbol{1}_{\left[k\le j\right]}\right|} \\
     &= \sum_{k=1}^n{\left|u_{i,k}v_{k,j}\right|\boldsymbol{1}_{\left[i\le k\right]}\boldsymbol{1}_{\left[k\le j\right]}}
-\end{aligned}$。  
+\end{aligned}`$。  
 此处  
-$\begin{aligned}
+$`\begin{aligned}
     \boldsymbol{1}_{\left[i\le k\right]}\boldsymbol{1}_{\left[k\le j\right]}
     &= \boldsymbol{1}_{\left[i\le k\right]}\boldsymbol{1}_{\left[k\le j\right]}\boldsymbol{1}_{\left[i\le j\right]} \\
     &\le \boldsymbol{1}_{\left[i\le j\right]}
-\end{aligned}$，  
+\end{aligned}`$，  
 所以  
-$\begin{aligned}
+$`\begin{aligned}
     \left|a_{i,j}\right|
     &\le \sum_{k=1}^n{\left|u_{i,k}v_{k,j}\right|\boldsymbol{1}_{\left[i\le k\right]}\boldsymbol{1}_{\left[k\le j\right]}} \\
     &\le \sum_{k=1}^n{\left|u_{i,k}v_{k,j}\right|\boldsymbol{1}_{\left[i\le j\right]}} \\
     &= \boldsymbol{1}_{\left[i\le j\right]}\sum_{k=1}^n{\left|u_{i,k}v_{k,j}\right|}
-\end{aligned}$，  
-此时$\forall i>j, \left|a_{i,j}\right| \le \boldsymbol{1}_{\left[i\le j\right]}\sum_{k=1}^n{\left|u_{i,k}v_{k,j}\right|} = 0$。即$a_{i,j} = 0, \forall i>j$，所以$\boldsymbol{A}$是上三角矩阵。  
+\end{aligned}`$，  
+此时$`\forall i>j, \left|a_{i,j}\right| \le \boldsymbol{1}_{\left[i\le j\right]}\sum_{k=1}^n{\left|u_{i,k}v_{k,j}\right|} = 0`$。即$`a_{i,j} = 0, \forall i>j`$，所以$`\boldsymbol{A}`$是上三角矩阵。  
 下三角矩阵同理。
 
 
