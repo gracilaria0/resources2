@@ -7,7 +7,7 @@ $`\left\{\begin{array}{}
     0.835x &+ 0.667y &= 0.168 \\
     0.333x &+ 0.266y &= 0.067 
 \end{array}\right.`$，  
-记矩阵$`\boldsymbol{A}$和$\left(\boldsymbol{A}|\boldsymbol{b}\right)`$为此线性方程组的系数矩阵和增广矩阵。分别使用5个和6个有效数字计算矩阵$`\boldsymbol{A}`$和$`\left(\boldsymbol{A}|\boldsymbol{b}\right)`$的秩，并判断方程组是否可解。**
+记矩阵$`\boldsymbol{A}`$和$`\left(\boldsymbol{A}|\boldsymbol{b}\right)`$为此线性方程组的系数矩阵和增广矩阵。分别使用5个和6个有效数字计算矩阵$`\boldsymbol{A}`$和$`\left(\boldsymbol{A}|\boldsymbol{b}\right)`$的秩，并判断方程组是否可解。**
 
 ##### ①在6位有效数字下：
 显然$`\boldsymbol{A}`$和$`\left(\boldsymbol{A}|\boldsymbol{b}\right)`$的所有$`1`$阶子式全非零，  
