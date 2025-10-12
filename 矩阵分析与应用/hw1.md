@@ -7,16 +7,16 @@ $`\left\{\begin{array}{}
     0.835x &+ 0.667y &= 0.168 \\
     0.333x &+ 0.266y &= 0.067 
 \end{array}\right.`$，  
-记矩阵$`\boldsymbol{A}$和$\left(\boldsymbol{A}|\boldsymbol{b}\right)`$为此线性方程组的系数矩阵和增广矩阵。分别使用5个和6个有效数字计算矩阵$`\boldsymbol{A}$和$\left(\boldsymbol{A}|\boldsymbol{b}\right)`$的秩，并判断方程组是否可解。**
+记矩阵$`\boldsymbol{A}$和$\left(\boldsymbol{A}|\boldsymbol{b}\right)`$为此线性方程组的系数矩阵和增广矩阵。分别使用5个和6个有效数字计算矩阵$`\boldsymbol{A}`$和$`\left(\boldsymbol{A}|\boldsymbol{b}\right)`$的秩，并判断方程组是否可解。**
 
 ##### ①在6位有效数字下：
-显然$`\boldsymbol{A}$和$\left(\boldsymbol{A}|\boldsymbol{b}\right)`$的所有$1$阶子式全非零，  
+显然$`\boldsymbol{A}`$和$`\left(\boldsymbol{A}|\boldsymbol{b}\right)`$的所有$`1`$阶子式全非零，  
 $`\det\boldsymbol{A} = \det\left[\boldsymbol{A} | \boldsymbol{b}\right]_3 = 0.835\times 0.266 - 0.333\times 0.667 = 0.222110 - 0.222111 = -0.000001 \neq 0`$，  
 所以$`\mathrm{rank}\left(\boldsymbol{A}\right) = 2, \mathrm{rank}\left(\boldsymbol{A}|\boldsymbol{b}\right) = 2`$。 
 $`\boldsymbol{A}`$满秩，方程组可解且有唯一解。
 
 ##### ②在5位有效数字下：
-显然$`\boldsymbol{A}$和$\left(\boldsymbol{A}|\boldsymbol{b}\right)`$的所有$`1`$阶子式全非零，  
+显然$`\boldsymbol{A}`$和$`\left(\boldsymbol{A}|\boldsymbol{b}\right)`$的所有$`1`$阶子式全非零，  
 $`\begin{array}{rl}
     \det\boldsymbol{A} = \det\left[\boldsymbol{A} | \boldsymbol{b}\right]_3 &= 0.835\times 0.266 - 0.333\times 0.667 = 0.22211 - 0.22211 = 0, \\
     \det\left[\boldsymbol{A} | \boldsymbol{b}\right]_2 &= 0.835\times 0.067 - 0.333\times 0.168 = 0.05594 - 0.05594 = 0, \\
