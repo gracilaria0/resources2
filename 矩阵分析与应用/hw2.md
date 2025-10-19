@@ -25,7 +25,7 @@ $`\boldsymbol{B} = \boldsymbol{A} + \begin{pmatrix}
     0 & 0 & 0 \\
     0 & 2 & 0
 \end{pmatrix} = \boldsymbol{A} + 2\boldsymbol{e}_3\boldsymbol{e}_2^\mathrm{T}`$，
-所以
+所以  
 $`\begin{aligned}
 \boldsymbol{B}^{-1} &= \boldsymbol{A}^{-1} - 2\frac{\boldsymbol{A}^{-1}\boldsymbol{e}_3\boldsymbol{e}_2^\mathrm{T}\boldsymbol{A}^{-1}}{1 + 2\boldsymbol{e}_2^\mathrm{T}\boldsymbol{A}^{-1}\boldsymbol{e}_3} \\
 &= \boldsymbol{A}^{-1} - 2\frac{\begin{pmatrix}
@@ -46,15 +46,15 @@ $`\begin{aligned}
     1 & 2 & -1 \\
     0 & -1 & 1 \\
     1 & 4 & -2
-\end{pmatrix}
-\end{aligned}`$。
+\end{pmatrix}.
+\end{aligned}`$
 
 $`\boldsymbol{C} = \boldsymbol{B} + \begin{pmatrix}
     0 & 0 & 0 \\
     0 & 0 & 0 \\
     0 & 0 & 1
 \end{pmatrix} = \boldsymbol{B} + \boldsymbol{e}_3\boldsymbol{e}_3^\mathrm{T}`$，
-所以
+所以  
 $`\begin{aligned}
 \boldsymbol{C}^{-1} &= \boldsymbol{B}^{-1} - \frac{\boldsymbol{B}^{-1}\boldsymbol{e}_3\boldsymbol{e}_3^\mathrm{T}\boldsymbol{B}^{-1}}{1 + \boldsymbol{e}_3^\mathrm{T}\boldsymbol{B}^{-1}\boldsymbol{e}_3} \\
 &= \boldsymbol{B}^{-1} - \frac{\begin{pmatrix}
@@ -116,8 +116,8 @@ $`\begin{aligned}
         0 & 2 & 6 \\
         0 & 0 & 3
     \end{pmatrix},
-\end{aligned}`$
-右侧满足上三角，所以
+\end{aligned}`$  
+右侧满足上三角，所以  
 $`\begin{aligned}
     \boldsymbol{L} &= \begin{pmatrix}
         1 & 0 & 0 \\
@@ -142,7 +142,8 @@ $`\begin{aligned}
         4 & 1 & 0 \\
         3 & 2 & 1
     \end{pmatrix}.
-\end{aligned}`$
+\end{aligned}`$  
+
 $`\left\{\begin{aligned}
     \boldsymbol{U} &= \begin{pmatrix}
         1 & 4 & 5 \\
@@ -165,7 +166,7 @@ $`\boldsymbol{L}^{-1} = \begin{pmatrix}
     1 & 0 & 0 \\
     -4 & 1 & 0 \\
     -3 & 0 & 1
-\end{pmatrix};`$
+\end{pmatrix};`$  
 设$`\boldsymbol{U}\boldsymbol{X} = \boldsymbol{I}`$，
 有  
 $`\left\{\begin{aligned}
@@ -176,13 +177,14 @@ $`\left\{\begin{aligned}
     0 &= 2x_{2,3} + 6x_{3,3} \\
     0 &= 1x_{1,3} + 4x_{2,3} + 5x_{3,3} \\
     0 &= 1x_{1,2} + 4x_{2,2} + 5x_{3,2}
-\end{aligned}\right.`$
+\end{aligned}\right.`$  
 解得$`\boldsymbol{U}^{-1} = \boldsymbol{X} = \begin{pmatrix}
     1 & -2 & \frac{7}{3} \\
     0 & \frac{1}{2} & -1 \\
     0 & 0 & \frac{1}{3}
-\end{pmatrix}.`$
-所以
+\end{pmatrix}.`$  
+
+所以  
 $`\begin{aligned}
     \boldsymbol{A}^{-1} &= \boldsymbol{U}^{-1}\boldsymbol{L}^{-1} \\
     &= \begin{pmatrix}
@@ -239,7 +241,8 @@ $`\boldsymbol{A} = \begin{pmatrix}
 
 记序列$`\boldsymbol{p} = \begin{pmatrix}
     1 \\ 2 \\ 3 \\ 4
-\end{pmatrix}`$，有
+\end{pmatrix}`$，有  
+
 $`\begin{aligned}
     \left[\boldsymbol{A}|\boldsymbol{p}\right] &: \left[\begin{array}{cccc|c}
         1 & 2 & 4 & 17 & 1 \\
@@ -255,30 +258,31 @@ $`\begin{aligned}
     \end{array}\right] \\
     &\rightarrow\left[\begin{array}{cccc|c}
         3 & 6 & -12 & 3 & 2 \\
-        \bold{\frac{1}{3}} & 0 & 8 & 16 & 1 \\
-        \bold{\frac{2}{3}} & -1 & 5 & 0 & 3 \\
-        \bold{0} & 2 & -2 & 6 & 4
+        \mathbf{\frac{1}{3}} & 0 & 8 & 16 & 1 \\
+        \mathbf{\frac{2}{3}} & -1 & 5 & 0 & 3 \\
+        \mathbf{0} & 2 & -2 & 6 & 4
     \end{array}\right] \\
     &\rightarrow\left[\begin{array}{cccc|c}
         3 & 6 & -12 & 3 & 2 \\
-        \bold{0} & 2 & -2 & 6 & 4 \\
-        \bold{\frac{1}{3}} & 0 & 8 & 16 & 1 \\
-        \bold{\frac{2}{3}} & -1 & 5 & 0 & 3
+        \mathbf{0} & 2 & -2 & 6 & 4 \\
+        \mathbf{\frac{1}{3}} & 0 & 8 & 16 & 1 \\
+        \mathbf{\frac{2}{3}} & -1 & 5 & 0 & 3
     \end{array}\right] \\
     &\rightarrow\left[\begin{array}{cccc|c}
         3 & 6 & -12 & 3 & 2 \\
-        \bold{0} & 2 & -2 & 6 & 4 \\
-        \bold{\frac{1}{3}} & \bold{0} & 8 & 16 & 1 \\
-        \bold{\frac{2}{3}} & \bold{-\frac{1}{2}} & 4 & 3 & 3
+        \mathbf{0} & 2 & -2 & 6 & 4 \\
+        \mathbf{\frac{1}{3}} & \mathbf{0} & 8 & 16 & 1 \\
+        \mathbf{\frac{2}{3}} & \mathbf{-\frac{1}{2}} & 4 & 3 & 3
     \end{array}\right] \\
     &\rightarrow\left[\begin{array}{cccc|c}
         3 & 6 & -12 & 3 & 2 \\
-        \bold{0} & 2 & -2 & 6 & 4 \\
-        \bold{\frac{1}{3}} & \bold{0} & 8 & 16 & 1 \\
-        \bold{\frac{2}{3}} & \bold{-\frac{1}{2}} & \bold{\frac{1}{2}} & -5 & 3
+        \mathbf{0} & 2 & -2 & 6 & 4 \\
+        \mathbf{\frac{1}{3}} & \mathbf{0} & 8 & 16 & 1 \\
+        \mathbf{\frac{2}{3}} & \mathbf{-\frac{1}{2}} & \mathbf{\frac{1}{2}} & -5 & 3
     \end{array}\right],
-\end{aligned}`$
-所以
+\end{aligned}`$  
+
+所以  
 $`\left\{\begin{aligned}
     \boldsymbol{L} &= \begin{pmatrix}
         1 & 0 & 0 & 0 \\
@@ -318,10 +322,10 @@ $`\left\{\begin{aligned}
     0 & 1 & \xi
 \end{pmatrix}`$不存在LU分解？**
 
-$`\boldsymbol{A}`$的三个主子式
+$`\boldsymbol{A}`$的三个主子式  
 $`\begin{aligned}
     \boldsymbol{D}_1 &= \xi, \\
     \boldsymbol{D}_2 &= \xi^2 - 2, \\
     \boldsymbol{D}_3 &= \xi\left(\xi^2-1\right) - 2\xi = \xi\left(\xi^2 - 3\right).
-\end{aligned}`$
+\end{aligned}`$  
 所以当$`\xi \in \left\{0, \pm\sqrt{2}, \pm\sqrt{3}\right\}`$时，$`\boldsymbol{A}`$不存在LU分解。
