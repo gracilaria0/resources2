@@ -3,7 +3,7 @@
 
 #### 3.1
 **试说明所有$`n\times n`$的实数矩阵构成的集合为一个线性空间。另外判断下列哪些是该空间的子空间，并给出理由。
-①所有对称矩阵；②所有反对称矩阵；③所有可逆矩阵；④所有上三角矩阵；⑤所有下三角矩阵；⑥满足$`\mathrm{trace}\left(\boldsymbol{A}\right) = 0`$的所有矩阵。**
+①所有对称矩阵；②所有反对称矩阵；③所有可逆矩阵；④所有上三角矩阵；⑤所有下三角矩阵；⑥满足$`\mathrm{trace}{\boldsymbol{A}} = 0`$的所有矩阵。**
 
 对于所有$`n\times n`$的实数矩阵构成的集合$`S = \left\{\boldsymbol{A} = \left(a_{i,j}\right) \mid a_{i,j}\in \mathbb{R}\right\}`$，可以在其上定义  
 加法：$`+: S \times S \rightarrow S', \left(\left(a_{i,j}\right), \left(b_{i,j}\right) \right) \mapsto \left(a_{i,j} + b_{i,j}\right)`$。因为$`\mathbb{R}`$对加法有封闭性，$`a_{i,j} + b_{i,j} \in \mathbb{R}`$，所以$`\left(a_{i,j} + b_{i,j}\right) \in S, S' = S`$，对$`S`$加法封闭。
@@ -57,14 +57,14 @@ $`\ker{\boldsymbol{B}} = \left\{\boldsymbol{x}\in \mathbb{R}^p \mid \boldsymbol{
 
 集合中元素所在的全空间是所有$`2\times 2`$的实矩阵$`\mathbb{R}^{2\times 2}`$空间，该空间是$`4`$维的，空间中的零元$`\boldsymbol{O} = \begin{pmatrix}
     0 & 0 \\ 0 & 0
-\end{pmatrix}`$。
+\end{pmatrix}`$。  
 用给定集合中的后一个元素减去前一个元素，可以得到$`\begin{pmatrix}
     0 & 1 \\ 0 & 0
 \end{pmatrix}, \begin{pmatrix}
     0 & 0 \\ 1 & 0
 \end{pmatrix}, \begin{pmatrix}
     0 & 0 \\ 0 & 1
-\end{pmatrix}`$，它们与第一个元素恰好是每一个位置上的单位元素。
+\end{pmatrix}`$，它们与第一个元素恰好是每一个位置上的单位元素。  
 取$`c_1, c_2, c_3, c_4 \in \mathbb{R}`$，有$`c_1 \begin{pmatrix}
     1 & 0 \\ 0 & 0
 \end{pmatrix} + c_2 \begin{pmatrix}
@@ -77,7 +77,7 @@ $`\ker{\boldsymbol{B}} = \left\{\boldsymbol{x}\in \mathbb{R}^p \mid \boldsymbol{
     c_1 & c_2 \\ c_3 & c_4
 \end{pmatrix}`$，无法相互消去，当且仅当$`c_1 = c_2 = c_3 = c_4 = 0`$时，$`\begin{pmatrix}
     c_1 & c_2 \\ c_3 & c_4
-\end{pmatrix} = \boldsymbol{O}`$。
+\end{pmatrix} = \boldsymbol{O}`$。  
 所以集合线性无关，且是全空间$`\mathbb{R}^{2\times 2}`$的一个极大无关组。
 
 
