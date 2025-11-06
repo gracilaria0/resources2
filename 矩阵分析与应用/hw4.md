@@ -249,7 +249,7 @@ $`\begin{aligned}
         0 & 1 & -1 \\
         0 & 0 & 1 \\
     \end{pmatrix}
-\end{aligned}`$
+\end{aligned}`$  
 满足$`\left[\boldsymbol{A}\right]_B = \boldsymbol{P}^{-1}\left[\boldsymbol{A}\right]_{B'}\boldsymbol{P}`$，  
 $`\begin{aligned}
     \boldsymbol{Q} &= \boldsymbol{P}^{-1} \\
