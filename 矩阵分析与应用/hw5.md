@@ -205,21 +205,21 @@ $`\begin{aligned}
 对$`\boldsymbol{A}`$进行Gram-Schmidt正交化，  
 $`\boldsymbol{q}_1 = \frac{\boldsymbol{Ae}_1}{\sqrt{\left<\boldsymbol{Ae}_1, \boldsymbol{Ae}_1\right>}} = \frac{1}{\sqrt{3}}\begin{pmatrix}
     1 \\ 1 \\ 1 \\ 0
-\end{pmatrix}, $
+\end{pmatrix}, `$
 
-$\boldsymbol{q}_2' = \boldsymbol{Ae}_2 - \left<\boldsymbol{q}_1, \boldsymbol{Ae}_2\right>\boldsymbol{q}_1 = \boldsymbol{Ae}_2 - \sqrt{3}\boldsymbol{q}_1 = \begin{pmatrix}
+$`\boldsymbol{q}_2' = \boldsymbol{Ae}_2 - \left<\boldsymbol{q}_1, \boldsymbol{Ae}_2\right>\boldsymbol{q}_1 = \boldsymbol{Ae}_2 - \sqrt{3}\boldsymbol{q}_1 = \begin{pmatrix}
     -1 \\ 1 \\ 0 \\ 1
-\end{pmatrix}, $
+\end{pmatrix}, `$
 
-$\boldsymbol{q}_2 = \frac{\boldsymbol{q}_2'}{\sqrt{\left<\boldsymbol{q}_2', \boldsymbol{q}_2'\right>}} = \frac{1}{\sqrt{3}}\begin{pmatrix}
+$`\boldsymbol{q}_2 = \frac{\boldsymbol{q}_2'}{\sqrt{\left<\boldsymbol{q}_2', \boldsymbol{q}_2'\right>}} = \frac{1}{\sqrt{3}}\begin{pmatrix}
     -1 \\ 1 \\ 0 \\ 1
-\end{pmatrix}, $
+\end{pmatrix}, `$
 
-$\boldsymbol{q}_3' = \boldsymbol{Ae}_3 - \left<\boldsymbol{q}_1, \boldsymbol{Ae}_3\right>\boldsymbol{q}_1 - \left<\boldsymbol{q}_2, \boldsymbol{Ae}_3\right>\boldsymbol{q}_2 = \boldsymbol{Ae}_3 + \sqrt{3}\boldsymbol{q}_1 - \sqrt{3}\boldsymbol{q}_2 = \begin{pmatrix}
+$`\boldsymbol{q}_3' = \boldsymbol{Ae}_3 - \left<\boldsymbol{q}_1, \boldsymbol{Ae}_3\right>\boldsymbol{q}_1 - \left<\boldsymbol{q}_2, \boldsymbol{Ae}_3\right>\boldsymbol{q}_2 = \boldsymbol{Ae}_3 + \sqrt{3}\boldsymbol{q}_1 - \sqrt{3}\boldsymbol{q}_2 = \begin{pmatrix}
     1 \\ 1 \\ -2 \\ 0
-\end{pmatrix}, $
+\end{pmatrix}, `$
 
-$\boldsymbol{q}_3 = \frac{\boldsymbol{q}_3'}{\sqrt{\left<\boldsymbol{q}_3', \boldsymbol{q}_3'\right>}} = \frac{1}{\sqrt{6}}\begin{pmatrix}
+$`\boldsymbol{q}_3 = \frac{\boldsymbol{q}_3'}{\sqrt{\left<\boldsymbol{q}_3', \boldsymbol{q}_3'\right>}} = \frac{1}{\sqrt{6}}\begin{pmatrix}
     1 \\ 1 \\ -2 \\ 0
 \end{pmatrix},`$  
 
@@ -265,9 +265,9 @@ $`\begin{aligned}
     &= \begin{pmatrix}
         1 \\ 0 \\ 10^{-3}
     \end{pmatrix}
-\end{aligned}$
+\end{aligned}`$
 
-$\begin{aligned}
+$`\begin{aligned}
     \boldsymbol{u}_2' &= \boldsymbol{x}_2 - \left<\boldsymbol{u}_1, \boldsymbol{x}_2\right>\boldsymbol{u}_1 \\
     &= \begin{pmatrix}
         1 \\ 0 \\ 0
@@ -277,13 +277,13 @@ $\begin{aligned}
     &= \begin{pmatrix}
         0 \\ 0 \\ -10^{-3}
     \end{pmatrix}
-\end{aligned}$
+\end{aligned}`$
 
-$\boldsymbol{u}_2 = \frac{\boldsymbol{u}_2'}{\sqrt{\left<\boldsymbol{u}_2', \boldsymbol{u}_2'\right>}} = \begin{pmatrix}
+$`\boldsymbol{u}_2 = \frac{\boldsymbol{u}_2'}{\sqrt{\left<\boldsymbol{u}_2', \boldsymbol{u}_2'\right>}} = \begin{pmatrix}
     0 \\ 0 \\ -1
-\end{pmatrix} $
+\end{pmatrix} `$
 
-$\begin{aligned}
+$`\begin{aligned}
     \boldsymbol{u}_3' &= \boldsymbol{x}_3 - \left<\boldsymbol{u}_1, \boldsymbol{x}_3\right>\boldsymbol{u}_1 - \left<\boldsymbol{u}_2, \boldsymbol{x}_3\right>\boldsymbol{u}_2\\
     &= \begin{pmatrix}
         1 \\ 10^{-3} \\ 0
@@ -293,9 +293,9 @@ $\begin{aligned}
     &= \begin{pmatrix}
         0 \\ 10^{-3} \\ -10^{-3}
     \end{pmatrix}
-\end{aligned} $
+\end{aligned} `$
 
-$\begin{aligned}
+$`\begin{aligned}
     \boldsymbol{u}_3 &= \frac{\boldsymbol{u}_3'}{\sqrt{\left<\boldsymbol{u}_3', \boldsymbol{u}_3'\right>}} \\
     &= \frac{1}{\sqrt{10^{-6} + 10^{-6}}}\begin{pmatrix}
         0 \\ 10^{-3} \\ -10^{-3}
@@ -311,9 +311,9 @@ $\begin{aligned}
 ###### ②改进的Gram-Schmidt正交化
 $`\boldsymbol{u}_1 = \frac{\boldsymbol{x}_1}{\sqrt{\left<\boldsymbol{x}_1, \boldsymbol{x}_1\right>}} = \begin{pmatrix}
     1 \\ 0 \\ 10^{-3}
-\end{pmatrix} $
+\end{pmatrix} `$
 
-$\begin{aligned}
+$`\begin{aligned}
     \boldsymbol{u}_2' &= \left(\boldsymbol{I} - \boldsymbol{u}_1\boldsymbol{u}_1^*\right)\boldsymbol{x}_2 \\
     &= \begin{pmatrix}
         1-1 & 0 & -10^{-3} \\
@@ -330,13 +330,13 @@ $\begin{aligned}
     &= \begin{pmatrix}
         0 \\ 0 \\ -10^{-3}
     \end{pmatrix}
-\end{aligned} $
+\end{aligned} `$
 
-$\boldsymbol{u}_2 = \frac{\boldsymbol{u}_2'}{\sqrt{\left<\boldsymbol{u}_2', \boldsymbol{u}_2'\right>}} = \begin{pmatrix}
+$`\boldsymbol{u}_2 = \frac{\boldsymbol{u}_2'}{\sqrt{\left<\boldsymbol{u}_2', \boldsymbol{u}_2'\right>}} = \begin{pmatrix}
     0 \\ 0 \\ -1
-\end{pmatrix} $
+\end{pmatrix} `$
 
-$\begin{aligned}
+$`\begin{aligned}
     \boldsymbol{u}_3' &= \left(\boldsymbol{I} - \boldsymbol{u}_1\boldsymbol{u}_1^* - \boldsymbol{u}_2\boldsymbol{u}_2^*\right)\boldsymbol{x}_3 \\
     &= \begin{pmatrix}
         0 & 0 & -10^{-3} \\
@@ -353,9 +353,9 @@ $\begin{aligned}
     &= \begin{pmatrix}
         0 \\ 10^{-3} \\ -10^{-3}
     \end{pmatrix}
-\end{aligned} $
+\end{aligned} `$
 
-$\boldsymbol{u}_3 = \frac{\boldsymbol{u}_3'}{\sqrt{\left<\boldsymbol{u}_3', \boldsymbol{u}_3'\right>}} = \begin{pmatrix}
+$`\boldsymbol{u}_3 = \frac{\boldsymbol{u}_3'}{\sqrt{\left<\boldsymbol{u}_3', \boldsymbol{u}_3'\right>}} = \begin{pmatrix}
     0 \\ 0.709 \\ -0.709
 \end{pmatrix}`$  
 
